@@ -1,4 +1,4 @@
-let mix = require('laravel-mix');
+let mix = require('laravel-mix')
 
 /*
  |--------------------------------------------------------------------------
@@ -11,5 +11,24 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+mix.sourceMaps()
+    .js('resources/assets/js/app.js', 'public/js')
+    .stylus('resources/assets/stylus/app.styl', 'public/css', {
+        use: [
+            require('rupture')()
+        ]
+    })
+    .disableNotifications()
+
+mix.browserSync({
+    notify: false,
+    proxy: 'http://localhost:8000'
+})
+
+mix.webpackConfig({
+    devtool: "source-map"
+})
+
+if (mix.inProduction()) {
+    mix.version()
+}
