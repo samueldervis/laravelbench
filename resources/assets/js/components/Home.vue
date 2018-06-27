@@ -59,7 +59,7 @@
                                             </div>
                                         </v-card-title>
                                         <v-card-actions>
-                                            <v-btn flat color="primary" class="learn-more-btn">Learn more</v-btn>
+                                            <!--<v-btn flat color="primary" class="learn-more-btn">Learn more</v-btn>-->
                                             <v-spacer></v-spacer>
                                             <v-btn flat color="primary">Get started</v-btn>
                                         </v-card-actions>
