@@ -11,11 +11,16 @@
 |
 */
 
-Route::get('/', function () {
-//    return view
-    dd(mpesa_request('0790551161',100));
-});
+//Route::get('/', function () {
+////    return view
+//    dd(mpesa_request('0790551161',100));
+//});
+
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/{view?}', 'HomeController@index')
+    ->where('view', '(.*)')
+    ->name('home');
