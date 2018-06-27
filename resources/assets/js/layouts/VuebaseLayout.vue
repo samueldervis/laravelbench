@@ -50,7 +50,7 @@
             <v-divider></v-divider>
 
             <v-list subheader :class="{'list-border-bottom' : miniVariant}">
-                <v-subheader>ANALYTICS</v-subheader>
+                <v-subheader>MPESA</v-subheader>
                 <template v-for="item in analyticsItems">
                     <v-tooltip right :disabled="!miniVariant">
                         <v-list-tile
@@ -73,7 +73,7 @@
             <v-divider></v-divider>
 
             <v-list subheader>
-                <v-subheader>DEVELOP</v-subheader>
+                <v-subheader>Explore</v-subheader>
                 <template v-for="item in developItems">
                     <v-tooltip right :disabled="!miniVariant">
                         <v-list-tile
@@ -250,7 +250,7 @@
                     },
                     {
                         icon: 'event',
-                        title: 'Events',
+                        title: 'Event',
                         link: ''
                     },
                     {
@@ -262,27 +262,27 @@
                 developItems: [
                     {
                         icon: 'supervisor_account',
-                        title: 'Authentification',
+                        title: 'C2B',
                         link: ''
                     },
                     {
                         icon: 'storage',
-                        title: 'Database',
+                        title: 'STK Push',
                         link: ''
                     },
                     {
                         icon: 'perm_media',
-                        title: 'Storage',
+                        title: 'B2C',
                         link: ''
                     },
                     {
                         icon: 'public',
-                        title: 'Hosting',
+                        title: 'B2B',
                         link: ''
                     },
                     {
                         icon: 'functions',
-                        title: 'Functions',
+                        title: 'Reversals',
                         link: ''
                     }
                 ],
@@ -296,11 +296,11 @@
                     {id: 3, title: 'Logs', link: 'logs'}
                 ],
                 menuItems: [
-                    'Vue', 'NodeJS', 'Laravel'
+                    'Mpesa', 'Equitel', 'Airtel Money','T-cash'
                 ],
                 searching: false,
                 search: '',
-                appName: appName
+                appName: 'API Explorer'
             }
         },
         methods: {

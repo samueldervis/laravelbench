@@ -9,22 +9,22 @@
                 flat
         >
             <v-toolbar-title class="mx-auto" slot="extension">
-                <span>Welcome to Vuebase</span>
-                <h2>Everything starts here.</h2>
+                <span>Mobile Money API Visualization</span>
+                <h2>Works with ...</h2>
                 <v-layout row>
                     <v-flex wrap>
                         <v-btn outline large fab color="white" class="outine-2">
-                            <i class="fab fa-vuejs fa-3x"></i>
-                        </v-btn>
-                    </v-flex>
-                    <v-flex wrap>
-                        <v-btn outline large fab color="white" class="outine-2">
-                            <i class="fab fa-node fa-3x"></i>
-                        </v-btn>
-                    </v-flex>
-                    <v-flex wrap>
-                        <v-btn outline large fab color="white" class="outine-2">
                             <i class="fab fa-laravel fa-2x"></i>
+                        </v-btn>
+                    </v-flex>
+                    <v-flex wrap>
+                        <v-btn outline large fab color="white" class="outine-2">
+                            <i class="fab fa-react fa-3x"></i>
+                        </v-btn>
+                    </v-flex>
+                    <v-flex wrap>
+                        <v-btn outline large fab color="white" class="outine-2">
+                            <i class="fab fa-vuejs fa-3x"></i>
                         </v-btn>
                     </v-flex>
                 </v-layout>
@@ -38,7 +38,7 @@
                         <v-container fluid grid-list-lg>
                             <v-layout row wrap>
                                 <v-flex xs12>
-                                    <h2 class="white--text">Discover Vuebase</h2>
+                                    <h2 class="white--text">Discover our expressive API</h2>
                                 </v-flex>
                             </v-layout>
                             <v-layout row wrap>
@@ -76,32 +76,32 @@
 
 <script>
     export default {
-        data () {
+        data() {
             return {
                 links: [
                     {
                         id: '1',
-                        title: 'Dashboard',
-                        description: 'Get detailed anlytics to measure and analyze how users engage with your app',
-                        color: 'orange'
+                        title: 'MPESA',
+                        description: 'The most common payment method with large customer base',
+                        color: 'green'
                     },
                     {
                         id: '2',
-                        title: 'Storage',
-                        description: 'Store and retrieve user-generated content, such as images, audio, and videos, without server-side code.',
-                        color: 'teal'
+                        title: 'Airtel Money',
+                        description: 'Artel Money has been there for sometime, cheap transactions.',
+                        color: 'red'
                     },
                     {
                         id: '3',
-                        title: 'Notifications',
-                        description: 'Manage your notification campaigns and send messages to reach the right users at the right time',
-                        color: 'blue'
+                        title: 'Equitel',
+                        description: 'Equity\'s mobile money payment platform',
+                        color: 'teal'
                     },
                     {
                         id: '4',
-                        title: 'Authentification',
-                        description: 'Authenticate and manage users from a variety of providers without server-side-code',
-                        color: 'purple'
+                        title: 'T-Cash',
+                        description: 'Telkom Kenya\'s API',
+                        color: 'orange'
                     }
                 ]
             }
@@ -113,9 +113,11 @@
     .outine-2 {
         border: 2px solid white;
     }
+
     .card--flex-toolbar {
         margin-top: -104px;
     }
+
     .learn-more-btn {
         text-transform: initial;
         text-decoration: underline;
