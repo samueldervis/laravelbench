@@ -1,0 +1,3 @@
+[submodule "packages/Samerior/MobileMoney"]
+	path = packages/Samerior/MobileMoney
+	url = git@github.com:samerior/mobile-money.git

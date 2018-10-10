@@ -163,6 +163,7 @@ return [
         /*
          * Package Service Providers...
          */
+        Samerior\MobileMoney\MobileMoneyServiceProvider::class,
 
         /*
          * Application Service Providers...

@@ -27,11 +27,13 @@
             "database/factories"
         ],
         "psr-4": {
+            "Samerior\\MobileMoney\\": "packages/Samerior/MobileMoney/src",
             "App\\": "app/"
         }
     },
     "autoload-dev": {
         "psr-4": {
+            "Samerior\\MobileMoney\\": "packages/Samerior/MobileMoney/src",
             "Tests\\": "tests/"
         }
     },
